@@ -1,1 +1,426 @@
 EESchema Schematic File Version 2
+LIBS:_wireless
+LIBS:_transceiver
+LIBS:_stm32
+LIBS:_sensors
+LIBS:_power
+LIBS:power
+LIBS:phoenix
+LIBS:National
+LIBS:_motor_drivers
+LIBS:Mec
+LIBS:logo
+LIBS:_linear-regulators
+LIBS:IRF
+LIBS:_ic
+LIBS:_div
+LIBS:_discrete
+LIBS:cvra
+LIBS:_connectors
+LIBS:Comp2014
+LIBS:_charge-pump-regulators
+LIBS:_audio
+LIBS:_antenna
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:beacon-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_Small C?
+U 1 1 576B1267
+P 2075 1550
+F 0 "C?" H 2075 1625 50  0000 L CNN
+F 1 "0.1uF" H 2075 1475 50  0000 L CNN
+F 2 "" H 2075 1550 50  0000 C CNN
+F 3 "" H 2075 1550 50  0000 C CNN
+	1    2075 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576B12C5
+P 2075 1675
+F 0 "#PWR?" H 2075 1675 30  0001 C CNN
+F 1 "GND" H 2075 1605 30  0001 C CNN
+F 2 "" H 2075 1675 60  0001 C CNN
+F 3 "" H 2075 1675 60  0001 C CNN
+	1    2075 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576B1319
+P 2575 1575
+F 0 "#PWR?" H 2575 1575 30  0001 C CNN
+F 1 "GND" H 2575 1505 30  0001 C CNN
+F 2 "" H 2575 1575 60  0001 C CNN
+F 3 "" H 2575 1575 60  0001 C CNN
+	1    2575 1575
+	1    0    0    -1  
+$EndComp
+Text Notes 2475 1750 0    39   ~ 0
+Boot from \nflash
+Text Label 1675 1425 0    39   ~ 0
+STM32_NRST
+$Comp
+L C_Small C?
+U 1 1 576B166F
+P 2350 2375
+F 0 "C?" H 2350 2450 50  0000 L CNN
+F 1 "0.1uF" H 2350 2300 50  0000 L CNN
+F 2 "" H 2350 2375 50  0000 C CNN
+F 3 "" H 2350 2375 50  0000 C CNN
+	1    2350 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 576B16BA
+P 2100 2375
+F 0 "C?" H 2100 2450 50  0000 L CNN
+F 1 "0.1uF" H 2100 2300 50  0000 L CNN
+F 2 "" H 2100 2375 50  0000 C CNN
+F 3 "" H 2100 2375 50  0000 C CNN
+	1    2100 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 576B16E6
+P 1850 2375
+F 0 "C?" H 1850 2450 50  0000 L CNN
+F 1 "0.1uF" H 1850 2300 50  0000 L CNN
+F 2 "" H 1850 2375 50  0000 C CNN
+F 3 "" H 1850 2375 50  0000 C CNN
+	1    1850 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 1425 2575 1425
+Wire Wire Line
+	2075 1425 2075 1450
+Wire Wire Line
+	2075 1675 2075 1650
+Wire Wire Line
+	2575 1575 2575 1525
+Connection ~ 2075 1425
+Wire Wire Line
+	1600 2525 2575 2525
+Wire Wire Line
+	2575 2025 2550 2025
+Wire Wire Line
+	2550 1925 2550 2225
+$Comp
+L VCC #PWR?
+U 1 1 576B17ED
+P 1600 2175
+F 0 "#PWR?" H 1600 2275 30  0001 C CNN
+F 1 "VCC" H 1600 2275 30  0000 C CNN
+F 2 "" H 1600 2175 60  0001 C CNN
+F 3 "" H 1600 2175 60  0001 C CNN
+	1    1600 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576B1846
+P 1600 2575
+F 0 "#PWR?" H 1600 2575 30  0001 C CNN
+F 1 "GND" H 1600 2505 30  0001 C CNN
+F 2 "" H 1600 2575 60  0001 C CNN
+F 3 "" H 1600 2575 60  0001 C CNN
+	1    1600 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 576B18A8
+P 2525 3425
+F 0 "#PWR?" H 2525 3525 30  0001 C CNN
+F 1 "VCC" H 2525 3525 30  0000 C CNN
+F 2 "" H 2525 3425 60  0001 C CNN
+F 3 "" H 2525 3425 60  0001 C CNN
+	1    2525 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 3425 2575 3425
+$Comp
+L GND #PWR?
+U 1 1 576B18FD
+P 2525 3775
+F 0 "#PWR?" H 2525 3775 30  0001 C CNN
+F 1 "GND" H 2525 3705 30  0001 C CNN
+F 2 "" H 2525 3775 60  0001 C CNN
+F 3 "" H 2525 3775 60  0001 C CNN
+	1    2525 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 3775 2525 3725
+Wire Wire Line
+	2525 3725 2575 3725
+$Comp
+L XTAL-SMD-4-PADS X?
+U 1 1 576B1A1C
+P 4425 7000
+F 0 "X?" H 4600 6925 60  0000 C CNN
+F 1 "16MHz" H 4425 7150 60  0000 C CNN
+F 2 "" H 4425 7000 60  0000 C CNN
+F 3 "" H 4425 7000 60  0000 C CNN
+	1    4425 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 6825 4100 6825
+Wire Wire Line
+	4075 6725 4750 6725
+Wire Wire Line
+	4750 6725 4750 7050
+Wire Wire Line
+	4750 7000 4725 7000
+Wire Wire Line
+	4100 6825 4100 7050
+Wire Wire Line
+	4100 7000 4125 7000
+$Comp
+L GND #PWR?
+U 1 1 576B1BAD
+P 4425 7325
+F 0 "#PWR?" H 4425 7325 30  0001 C CNN
+F 1 "GND" H 4425 7255 30  0001 C CNN
+F 2 "" H 4425 7325 60  0001 C CNN
+F 3 "" H 4425 7325 60  0001 C CNN
+	1    4425 7325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 7275 4425 7325
+Wire Wire Line
+	4100 7275 4750 7275
+Wire Wire Line
+	4375 7275 4375 7200
+Wire Wire Line
+	4475 7275 4475 7200
+Connection ~ 4425 7275
+$Comp
+L C_Small C?
+U 1 1 576B1C71
+P 4100 7150
+F 0 "C?" H 4100 7225 50  0000 L CNN
+F 1 "10pF" H 4100 7075 50  0000 L CNN
+F 2 "" H 4100 7150 50  0000 C CNN
+F 3 "" H 4100 7150 50  0000 C CNN
+	1    4100 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 7250 4100 7275
+Connection ~ 4375 7275
+$Comp
+L C_Small C?
+U 1 1 576B1DF6
+P 4750 7150
+F 0 "C?" H 4750 7225 50  0000 L CNN
+F 1 "10pF" H 4750 7075 50  0000 L CNN
+F 2 "" H 4750 7150 50  0000 C CNN
+F 3 "" H 4750 7150 50  0000 C CNN
+	1    4750 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 7275 4750 7250
+Connection ~ 4475 7275
+Connection ~ 4750 7000
+Connection ~ 4100 7000
+Text Label 4500 2725 2    39   ~ 0
+STM32_SWDIO
+Wire Wire Line
+	4500 2725 4075 2725
+Text Label 4500 2825 2    39   ~ 0
+STM32_SWCLK
+Wire Wire Line
+	4500 2825 4075 2825
+Text Label 4500 1625 2    39   ~ 0
+UART_TX
+Wire Wire Line
+	4500 1625 4075 1625
+Text Label 4500 1725 2    39   ~ 0
+UART_RX
+Wire Wire Line
+	4500 1725 4075 1725
+$Comp
+L VCC #PWR?
+U 1 1 576B2522
+P 6400 1700
+F 0 "#PWR?" H 6400 1800 30  0001 C CNN
+F 1 "VCC" H 6400 1800 30  0000 C CNN
+F 2 "" H 6400 1700 60  0001 C CNN
+F 3 "" H 6400 1700 60  0001 C CNN
+	1    6400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1700 6450 1700
+Wire Wire Line
+	6400 1800 6450 1800
+$Comp
+L SWD/DEBUG CONN?
+U 1 1 576B2456
+P 6800 2000
+F 0 "CONN?" H 6978 2046 50  0000 L CNN
+F 1 "SWD/DEBUG" H 6978 1955 50  0000 L CNN
+F 2 "MODULE" H 6800 1950 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6800 1950 50  0001 C CNN
+	1    6800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576B26AD
+P 6400 1825
+F 0 "#PWR?" H 6400 1825 30  0001 C CNN
+F 1 "GND" H 6400 1755 30  0001 C CNN
+F 2 "" H 6400 1825 60  0001 C CNN
+F 3 "" H 6400 1825 60  0001 C CNN
+	1    6400 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1825 6400 1800
+Text Label 5950 1900 0    39   ~ 0
+STM32_NRST
+Wire Wire Line
+	5950 1900 6450 1900
+Text Label 5950 2000 0    39   ~ 0
+STM32_SWDIO
+Text Label 5950 2100 0    39   ~ 0
+STM32_SWCLK
+Text Label 5950 2200 0    39   ~ 0
+UART_TX
+Text Label 5950 2300 0    39   ~ 0
+UART_RX
+Wire Wire Line
+	6450 2000 5950 2000
+Wire Wire Line
+	5950 2100 6450 2100
+Wire Wire Line
+	6450 2200 5950 2200
+Wire Wire Line
+	5950 2300 6450 2300
+Text Label 4500 2525 2    39   ~ 0
+USB_DM
+Text Label 4500 2625 2    39   ~ 0
+USB_DP
+Wire Wire Line
+	4500 2625 4075 2625
+Wire Wire Line
+	4075 2525 4500 2525
+$Comp
+L STM32F415RGT6 U?
+U 1 1 576B1B05
+P 3325 4275
+F 0 "U?" H 3325 7390 50  0000 C CNN
+F 1 "STM32F405RGT6" H 3325 7299 50  0000 C CNN
+F 2 "MODULE" H 3325 4475 50  0001 C CNN
+F 3 "DOCUMENTATION" H 3325 4475 50  0001 C CNN
+	1    3325 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 576B1D60
+P 1600 2375
+F 0 "C?" H 1600 2450 50  0000 L CNN
+F 1 "4.7uF" H 1600 2300 50  0000 L CNN
+F 2 "" H 1600 2375 50  0000 C CNN
+F 3 "" H 1600 2375 50  0000 C CNN
+	1    1600 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2225 2575 2225
+Wire Wire Line
+	2350 2225 2350 2275
+Wire Wire Line
+	2350 2525 2350 2475
+Wire Wire Line
+	2100 2525 2100 2475
+Connection ~ 2350 2525
+Wire Wire Line
+	1850 2525 1850 2475
+Connection ~ 2100 2525
+Wire Wire Line
+	1600 2475 1600 2575
+Connection ~ 1850 2525
+Connection ~ 1600 2525
+Wire Wire Line
+	2575 2625 2550 2625
+Wire Wire Line
+	2550 2625 2550 2525
+Connection ~ 2550 2525
+Wire Wire Line
+	2550 2125 2575 2125
+Connection ~ 2550 2225
+Connection ~ 2550 2125
+Connection ~ 2550 2025
+Wire Wire Line
+	2575 1925 2550 1925
+Wire Wire Line
+	1600 2175 1600 2275
+Wire Wire Line
+	2100 2275 2100 2225
+Connection ~ 2350 2225
+Wire Wire Line
+	1850 2225 1850 2275
+Connection ~ 2100 2225
+Connection ~ 1600 2225
+Connection ~ 1850 2225
+Text Label 4500 4025 2    39   ~ 0
+CAN1_TX
+Wire Wire Line
+	4075 4025 4500 4025
+Text Label 4500 3925 2    39   ~ 0
+CAN1_RX
+Wire Wire Line
+	4075 3925 4500 3925
+$EndSCHEMATC
