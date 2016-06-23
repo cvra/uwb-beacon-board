@@ -135,17 +135,6 @@ F 3 "" H 1300 2375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR?
-U 1 1 576B17ED
-P 1050 2175
-F 0 "#PWR?" H 1050 2275 30  0001 C CNN
-F 1 "VCC" H 1050 2275 30  0000 C CNN
-F 2 "" H 1050 2175 60  0001 C CNN
-F 3 "" H 1050 2175 60  0001 C CNN
-	1    1050 2175
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR?
 U 1 1 576B1846
 P 1050 2575
@@ -397,9 +386,7 @@ NoConn ~ 7825 3325
 NoConn ~ 7825 3425
 NoConn ~ 7825 3525
 Wire Wire Line
-	1125 1425 1525 1425
-Wire Wire Line
-	1525 1425 2025 1425
+	1125 1425 2025 1425
 Wire Wire Line
 	1525 1425 1525 1450
 Wire Wire Line
@@ -408,23 +395,11 @@ Wire Wire Line
 	2025 1575 2025 1525
 Connection ~ 1525 1425
 Wire Wire Line
-	1050 2525 1300 2525
-Wire Wire Line
-	1300 2525 1550 2525
-Wire Wire Line
-	1550 2525 1800 2525
-Wire Wire Line
-	1800 2525 2000 2525
-Wire Wire Line
-	2000 2525 2025 2525
+	1050 2525 2025 2525
 Wire Wire Line
 	2025 2025 2000 2025
 Wire Wire Line
-	2000 2225 2000 2125
-Wire Wire Line
-	2000 2125 2000 2025
-Wire Wire Line
-	2000 2025 2000 1925
+	2000 2225 2000 1925
 Wire Wire Line
 	1975 3425 2025 3425
 Wire Wire Line
@@ -436,27 +411,17 @@ Wire Wire Line
 Wire Wire Line
 	3525 6725 4200 6725
 Wire Wire Line
-	4200 6725 4200 7000
-Wire Wire Line
-	4200 7000 4200 7050
+	4200 6725 4200 7050
 Wire Wire Line
 	4200 7000 4175 7000
 Wire Wire Line
-	3550 6825 3550 7000
-Wire Wire Line
-	3550 7000 3550 7050
+	3550 6825 3550 7050
 Wire Wire Line
 	3550 7000 3575 7000
 Wire Wire Line
 	3875 7275 3875 7325
 Wire Wire Line
-	3550 7275 3825 7275
-Wire Wire Line
-	3825 7275 3875 7275
-Wire Wire Line
-	3875 7275 3925 7275
-Wire Wire Line
-	3925 7275 4200 7275
+	3550 7275 4200 7275
 Wire Wire Line
 	3825 7275 3825 7200
 Wire Wire Line
@@ -499,15 +464,7 @@ Wire Wire Line
 Wire Wire Line
 	3525 2525 3950 2525
 Wire Wire Line
-	1050 2225 1300 2225
-Wire Wire Line
-	1300 2225 1550 2225
-Wire Wire Line
-	1550 2225 1800 2225
-Wire Wire Line
-	1800 2225 2000 2225
-Wire Wire Line
-	2000 2225 2025 2225
+	1050 2225 2025 2225
 Wire Wire Line
 	1800 2225 1800 2275
 Wire Wire Line
@@ -519,9 +476,7 @@ Wire Wire Line
 	1300 2525 1300 2475
 Connection ~ 1550 2525
 Wire Wire Line
-	1050 2475 1050 2525
-Wire Wire Line
-	1050 2525 1050 2575
+	1050 2475 1050 2575
 Connection ~ 1300 2525
 Connection ~ 1050 2525
 Wire Wire Line
@@ -537,9 +492,7 @@ Connection ~ 2000 2025
 Wire Wire Line
 	2000 1925 2025 1925
 Wire Wire Line
-	1050 2175 1050 2225
-Wire Wire Line
-	1050 2225 1050 2275
+	1050 2175 1050 2275
 Wire Wire Line
 	1550 2275 1550 2225
 Connection ~ 1800 2225
@@ -555,38 +508,22 @@ Wire Wire Line
 Wire Wire Line
 	5775 3325 5825 3325
 Wire Wire Line
-	5775 3125 5775 3225
-Wire Wire Line
-	5775 3225 5775 3325
+	5775 3125 5775 3325
 Wire Wire Line
 	5575 3125 5575 3200
 Wire Wire Line
 	5325 3125 5325 3200
 Connection ~ 5575 3125
 Wire Wire Line
-	5075 3075 5075 3125
-Wire Wire Line
-	5075 3125 5075 3200
+	5075 3075 5075 3200
 Connection ~ 5325 3125
 Wire Wire Line
 	5775 3225 5825 3225
 Connection ~ 5775 3225
 Wire Wire Line
-	5075 3525 5325 3525
+	5075 3525 5825 3525
 Wire Wire Line
-	5325 3525 5575 3525
-Wire Wire Line
-	5575 3525 5775 3525
-Wire Wire Line
-	5775 3525 5825 3525
-Wire Wire Line
-	5775 3525 5775 3625
-Wire Wire Line
-	5775 3625 5775 3725
-Wire Wire Line
-	5775 3725 5775 3825
-Wire Wire Line
-	5775 3825 5775 3925
+	5775 3525 5775 3925
 Wire Wire Line
 	5775 3625 5825 3625
 Wire Wire Line
@@ -605,19 +542,11 @@ Wire Wire Line
 	5325 3400 5325 3525
 Connection ~ 5575 3525
 Wire Wire Line
-	5075 3400 5075 3525
-Wire Wire Line
-	5075 3525 5075 3575
+	5075 3400 5075 3575
 Connection ~ 5325 3525
 Connection ~ 5775 3125
 Wire Wire Line
-	5075 3125 5325 3125
-Wire Wire Line
-	5325 3125 5575 3125
-Wire Wire Line
-	5575 3125 5775 3125
-Wire Wire Line
-	5775 3125 5825 3125
+	5075 3125 5825 3125
 Connection ~ 5075 3525
 Connection ~ 5075 3125
 Wire Wire Line
@@ -631,9 +560,7 @@ Wire Wire Line
 Wire Wire Line
 	7825 2825 8150 2825
 Wire Wire Line
-	7825 3025 8025 3025
-Wire Wire Line
-	8025 3025 8325 3025
+	7825 3025 8325 3025
 Wire Wire Line
 	8025 3075 8025 3025
 Connection ~ 8025 3025
@@ -791,13 +718,7 @@ F 3 "" H 9825 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9825 3550 9825 3650
-Wire Wire Line
-	9825 3650 9825 3750
-Wire Wire Line
-	9825 3750 9825 3850
-Wire Wire Line
-	9825 3850 9825 3900
+	9825 3550 9825 3900
 Wire Wire Line
 	9825 3850 9775 3850
 Wire Wire Line
@@ -851,9 +772,7 @@ F 3 "" H 8200 1775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 1625 8200 1725
-Wire Wire Line
-	8200 1725 8200 1775
+	8200 1625 8200 1775
 Wire Wire Line
 	8200 1725 8225 1725
 Wire Wire Line
@@ -951,4 +870,226 @@ Wire Wire Line
 	6350 1625 6650 1625
 Wire Wire Line
 	6650 1725 6350 1725
+$Comp
+L MPU-9250 U?
+U 1 1 576BE77D
+P 6825 5225
+F 0 "U?" H 6825 6162 60  0000 C CNN
+F 1 "MPU-9250" H 6825 6056 60  0000 C CNN
+F 2 "" H 6825 5825 60  0000 C CNN
+F 3 "" H 6825 5825 60  0000 C CNN
+	1    6825 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 576BE8FA
+P 5550 4525
+F 0 "#PWR?" H 5550 4625 30  0001 C CNN
+F 1 "VCC" H 5550 4625 30  0000 C CNN
+F 2 "" H 5550 4525 60  0001 C CNN
+F 3 "" H 5550 4525 60  0001 C CNN
+	1    5550 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 4575 5975 4675
+Wire Wire Line
+	5550 4575 6025 4575
+Wire Wire Line
+	5975 4675 6025 4675
+Connection ~ 5975 4575
+$Comp
+L C_Small C?
+U 1 1 576BEC69
+P 5800 4725
+F 0 "C?" H 5800 4800 50  0000 L CNN
+F 1 "10nF" H 5800 4650 50  0000 L CNN
+F 2 "" H 5800 4725 50  0000 C CNN
+F 3 "" H 5800 4725 50  0000 C CNN
+	1    5800 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 576BEDA5
+P 5550 4725
+F 0 "C?" H 5550 4800 50  0000 L CNN
+F 1 "0.1uF" H 5550 4650 50  0000 L CNN
+F 2 "" H 5550 4725 50  0000 C CNN
+F 3 "" H 5550 4725 50  0000 C CNN
+	1    5550 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4875 6025 4875
+Wire Wire Line
+	5800 4875 5800 4825
+Wire Wire Line
+	5550 4825 5550 4925
+Connection ~ 5800 4875
+Wire Wire Line
+	5800 4625 5800 4575
+Wire Wire Line
+	5550 4525 5550 4625
+Connection ~ 5800 4575
+Connection ~ 5550 4575
+NoConn ~ 6025 5925
+NoConn ~ 6025 5825
+NoConn ~ 6025 5725
+NoConn ~ 6025 5625
+NoConn ~ 6025 5525
+NoConn ~ 6025 5425
+NoConn ~ 6025 5325
+NoConn ~ 6025 5225
+NoConn ~ 6025 5125
+NoConn ~ 7625 4575
+NoConn ~ 7625 4675
+NoConn ~ 7625 5725
+NoConn ~ 7625 5575
+Text Label 7925 4825 2    39   ~ 0
+IMU_SCK
+Wire Wire Line
+	7925 4825 7625 4825
+Text Label 7925 4925 2    39   ~ 0
+IMU_MOSI
+Wire Wire Line
+	7925 4925 7625 4925
+Text Label 7925 5075 2    39   ~ 0
+IMU_MISO
+Wire Wire Line
+	7925 5075 7625 5075
+Text Label 7925 5225 2    39   ~ 0
+IMU_CS_N
+Wire Wire Line
+	7925 5225 7625 5225
+Text Label 7925 5375 2    39   ~ 0
+IMU_INT
+Wire Wire Line
+	7925 5375 7625 5375
+$Comp
+L VCC #PWR?
+U 1 1 576BFD92
+P 7750 5775
+F 0 "#PWR?" H 7750 5875 30  0001 C CNN
+F 1 "VCC" H 7750 5875 30  0000 C CNN
+F 2 "" H 7750 5775 60  0001 C CNN
+F 3 "" H 7750 5775 60  0001 C CNN
+	1    7750 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5775 7750 5825
+Wire Wire Line
+	7750 5825 7625 5825
+$Comp
+L GND #PWR?
+U 1 1 576BFF0F
+P 7750 5975
+F 0 "#PWR?" H 7750 5975 30  0001 C CNN
+F 1 "GND" H 7750 5905 30  0001 C CNN
+F 2 "" H 7750 5975 60  0001 C CNN
+F 3 "" H 7750 5975 60  0001 C CNN
+	1    7750 5975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5975 7750 5925
+Wire Wire Line
+	7750 5925 7625 5925
+$Comp
+L C_Small C?
+U 1 1 576C00E4
+P 7975 5625
+F 0 "C?" H 7975 5700 50  0000 L CNN
+F 1 "0.1uF" H 7975 5550 50  0000 L CNN
+F 2 "" H 7975 5625 50  0000 C CNN
+F 3 "" H 7975 5625 50  0000 C CNN
+	1    7975 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576C01F6
+P 7975 5775
+F 0 "#PWR?" H 7975 5775 30  0001 C CNN
+F 1 "GND" H 7975 5705 30  0001 C CNN
+F 2 "" H 7975 5775 60  0001 C CNN
+F 3 "" H 7975 5775 60  0001 C CNN
+	1    7975 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 5775 7975 5725
+Wire Wire Line
+	7625 5475 7975 5475
+Wire Wire Line
+	7975 5475 7975 5525
+Text Label 3950 4425 2    39   ~ 0
+IMU_SCK
+Wire Wire Line
+	3950 4425 3525 4425
+Text Label 3950 4625 2    39   ~ 0
+IMU_MOSI
+Wire Wire Line
+	3950 4625 3525 4625
+Text Label 3950 4525 2    39   ~ 0
+IMU_MISO
+Wire Wire Line
+	3950 4525 3525 4525
+Text Label 3950 4325 2    39   ~ 0
+IMU_CS_N
+Wire Wire Line
+	3950 4325 3525 4325
+Text Label 3950 4225 2    39   ~ 0
+IMU_INT
+Wire Wire Line
+	3950 4225 3525 4225
+Text Notes 4025 1675 0    39   ~ 0
+UART2
+Text Notes 4025 1975 0    39   ~ 0
+SPI1
+Wire Notes Line
+	3975 1575 4000 1575
+Wire Notes Line
+	4000 1575 4000 1750
+Wire Notes Line
+	4000 1750 3975 1750
+Wire Notes Line
+	3975 1775 4000 1775
+Wire Notes Line
+	4000 1775 4000 2150
+Wire Notes Line
+	4000 2150 3975 2150
+Text Notes 4025 4475 0    39   ~ 0
+SPI2
+Wire Notes Line
+	3975 4275 4000 4275
+Wire Notes Line
+	4000 4275 4000 4650
+Wire Notes Line
+	4000 4650 3975 4650
+$Comp
+L VCC #PWR?
+U 1 1 576B17ED
+P 1050 2175
+F 0 "#PWR?" H 1050 2275 30  0001 C CNN
+F 1 "VCC" H 1050 2275 30  0000 C CNN
+F 2 "" H 1050 2175 60  0001 C CNN
+F 3 "" H 1050 2175 60  0001 C CNN
+	1    1050 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576C24DC
+P 5550 4925
+F 0 "#PWR?" H 5550 4925 30  0001 C CNN
+F 1 "GND" H 5550 4855 30  0001 C CNN
+F 2 "" H 5550 4925 60  0001 C CNN
+F 3 "" H 5550 4925 60  0001 C CNN
+	1    5550 4925
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 4875
 $EndSCHEMATC
