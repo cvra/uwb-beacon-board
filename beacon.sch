@@ -351,7 +351,7 @@ Text Label 3950 2025 2    39   ~ 0
 UWB_MISO
 Text Label 3950 1925 2    39   ~ 0
 UWB_CLK
-Text Label 3950 2425 2    39   ~ 0
+Text Label 3950 5725 2    39   ~ 0
 UWB_RST_N
 Text Label 3950 2225 2    39   ~ 0
 UWB_IRQ
@@ -900,7 +900,7 @@ NoConn ~ 3525 5225
 NoConn ~ 3525 5425
 NoConn ~ 3525 5525
 NoConn ~ 3525 5625
-NoConn ~ 3525 5725
+NoConn ~ 3525 2425
 NoConn ~ 3525 5825
 NoConn ~ 3525 5925
 NoConn ~ 3525 6025
@@ -1228,7 +1228,7 @@ Wire Wire Line
 Wire Wire Line
 	3950 1925 3525 1925
 Wire Wire Line
-	3950 2425 3525 2425
+	3950 5725 3525 5725
 Wire Wire Line
 	3950 2225 3525 2225
 Wire Wire Line
