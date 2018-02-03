@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Beacon board"
-Date "2016-06-28"
-Rev "1.0"
+Date "2018-02-03"
+Rev "1.1"
 Comp "CVRA (Club Vaudois de Robotique Autonome)"
 Comment1 "Universal beacon system board for Eurobot"
 Comment2 ""
